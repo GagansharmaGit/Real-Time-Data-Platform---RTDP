@@ -1,0 +1,17 @@
+[package]
+name = "rtdp-conformance"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "rtdp-conformance"
+path = "src/main.rs"
+
+[dependencies]
+rtdp-core = { path = "../core", features = ["serde"] }
+serde.workspace = true
+serde_json.workspace = true
+log.workspace = true
+env_logger.workspace = true

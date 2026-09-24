@@ -1,0 +1,17 @@
+[package]
+name = "rtdp-benchmarks"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "rtdp-bench"
+path = "src/main.rs"
+
+[dependencies]
+rtdp-core = { path = "../core" }
+rtdp-transport-udp = { path = "../transports/udp" }
+clap.workspace = true
+log.workspace = true
+env_logger.workspace = true

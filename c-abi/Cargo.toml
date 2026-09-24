@@ -1,0 +1,13 @@
+[package]
+name = "rtdp-c"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[lib]
+crate-type = ["cdylib", "staticlib", "rlib"]
+
+[dependencies]
+rtdp-core = { path = "../core" }
+libc.workspace = true

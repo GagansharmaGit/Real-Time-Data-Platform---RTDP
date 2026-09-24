@@ -1,0 +1,20 @@
+[package]
+name = "rtdp-cli"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "rtdp"
+path = "src/main.rs"
+
+[dependencies]
+rtdp-core = { path = "../core", features = ["serde"] }
+rtdp-transport-udp = { path = "../transports/udp" }
+clap.workspace = true
+env_logger.workspace = true
+log.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+crossbeam-channel.workspace = true

@@ -1,0 +1,13 @@
+[package]
+name = "rtdp-transport-udp"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+rtdp-core = { path = "../../core" }
+byteorder.workspace = true
+log.workspace = true
+crossbeam-channel.workspace = true
+parking_lot.workspace = true
